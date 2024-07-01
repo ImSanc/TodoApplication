@@ -34,5 +34,4 @@ app.post("/completed", function(req,res) {
             });
             return;
         }
-        }
-})
+        })
