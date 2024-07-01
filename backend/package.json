@@ -1,0 +1,24 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "This is a simple todo Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImSanc/TodoApplication.git"
+  },
+  "author": "Sanchit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImSanc/TodoApplication/issues"
+  },
+  "homepage": "https://github.com/ImSanc/TodoApplication#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.23.8"
+  }
+}
