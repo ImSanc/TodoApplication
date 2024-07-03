@@ -56,3 +56,5 @@ app.post("/completed",async function(req,res) {
     })
 
 })
+
+app.listen(3000);
