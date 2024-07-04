@@ -1,6 +1,6 @@
 const express = require('express');
 const { createTodo, updateTodo } = require('./types')
-const { todo, todo } = require("./db")
+const { todo } = require('./db')
 
 const app = express();
 app.use(express.json());
@@ -27,8 +27,8 @@ app.post("/todos", async function(req,res) {
 
 
 app.get("/todos",  async function(req,res) {
-    const todo =  await todo.find();
-    res.status(201).json(todo);
+    const todos =  await todo.find();
+    res.status(201).json(todos);
 })
 
 
