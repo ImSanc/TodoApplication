@@ -47,11 +47,7 @@ app.post("/completed",async function(req,res) {
             return;
         }
     
-    await todo.update({
-        _id : req.body.id
-    }, {
-        completed : true
-    })
+    await todo.findByIdAndUpdate(completedPayload.id,{completed : true}, {new : true})
 
     res.json({
         msg : "Todo is completed"
